@@ -40,15 +40,15 @@
     --gold-light: 42 70% 70%;
     --gold-dark: 42 50% 38%;
     --navy: 218 45% 22%;
-    --navy-deep: 220 30% 8%;
+    --navy-deep: 0 0% 100%;
     --navy-light: 218 35% 30%;
 
     --font-display: 'Playfair Display', serif;
     --font-body: 'Raleway', sans-serif;
     --font-accent: 'Cormorant Garamond', serif;
 
-    --shadow-gold: 0 0 30px hsl(42 55% 54% / 0.15);
-    --shadow-card: 0 8px 32px hsl(220 30% 4% / 0.5);
+    --shadow-gold: 0 0 30px hsl(42 55% 54% / 0.1);
+    --shadow-card: 0 8px 32px hsl(220 20% 85% / 0.3);
     --gradient-gold: linear-gradient(135deg, hsl(42 55% 54%), hsl(42 70% 70%));
     --gradient-navy: linear-gradient(180deg, hsl(220 30% 8%), hsl(218 45% 15%));
 
