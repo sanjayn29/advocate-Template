@@ -32,9 +32,9 @@ const Particles = () => {
       </bufferGeometry>
       <pointsMaterial
         size={0.03}
-        color="#1B2A4A"
+        color="#C9A84C"
         transparent
-        opacity={0.3}
+        opacity={0.6}
         sizeAttenuation
       />
     </points>
