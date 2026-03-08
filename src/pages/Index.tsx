@@ -1,12 +1,29 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState } from "react";
+import LoadingScreen from "@/components/LoadingScreen";
+import ParticleBackground from "@/components/ParticleBackground";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import ServicesSection from "@/components/ServicesSection";
+import ContactSection from "@/components/ContactSection";
+import VisitingCard from "@/components/VisitingCard";
+import Footer from "@/components/Footer";
 
 const Index = () => {
+  const [loading, setLoading] = useState(true);
+
+  if (loading) {
+    return <LoadingScreen onComplete={() => setLoading(false)} />;
+  }
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="relative min-h-screen bg-background">
+      <ParticleBackground />
+      <Navbar />
+      <HeroSection />
+      <ServicesSection />
+      <ContactSection />
+      <VisitingCard />
+      <Footer />
     </div>
   );
 };
