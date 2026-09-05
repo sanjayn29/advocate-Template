@@ -1,6 +1,5 @@
 import { useState } from "react";
 import LoadingScreen from "@/components/LoadingScreen";
-import ParticleBackground from "@/components/ParticleBackground";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
@@ -17,7 +16,6 @@ const Index = () => {
 
   return (
     <div className="relative min-h-screen bg-background">
-      <ParticleBackground />
       <Navbar />
       <HeroSection />
       <ServicesSection />

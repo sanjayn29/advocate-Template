@@ -47,12 +47,12 @@ const ServicesSection = () => {
   }, []);
 
   return (
-    <section id="services" className="relative z-10 py-24 px-6" ref={sectionRef}>
+    <section id="services" className="relative z-10 py-24 px-6 bg-white" ref={sectionRef}>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <p className="font-accent text-gold text-sm tracking-[0.3em] uppercase mb-3">What We Offer</p>
-          <h2 className="font-display text-3xl md:text-4xl gradient-gold-text">Our Services</h2>
-          <div className="w-16 h-px gradient-gold mx-auto mt-4" />
+          <h2 className="font-display text-3xl md:text-4xl text-navy">Our Services</h2>
+          <div className="w-16 h-px bg-gold mx-auto mt-4" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -60,10 +60,10 @@ const ServicesSection = () => {
             <div
               key={service.title}
               data-service
-              className="group p-6 rounded-lg bg-card/50 gold-border-glow hover:bg-card/80 transition-all duration-500 cursor-default"
+              className="group p-6 rounded-sm bg-white border border-light-gray shadow-sm hover:-translate-y-1 hover:border-gold transition-all duration-300 cursor-default"
             >
               <service.icon className="w-8 h-8 text-gold mb-4 group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="font-display text-lg text-foreground mb-2">{service.title}</h3>
+              <h3 className="font-display text-lg text-navy mb-2">{service.title}</h3>
               <p className="font-body text-sm text-muted-foreground leading-relaxed">{service.desc}</p>
             </div>
           ))}
