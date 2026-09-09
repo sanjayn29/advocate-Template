@@ -1,8 +1,8 @@
-# Sathiyanesan M Legal Consultancy Website
+# S VetriSelvan Advocate Website
 
 ## Project Overview
 
-This project is a professional single-page website for Sathiyanesan M, Legal Business Consultant, based in Vellore. The website presents legal consultancy services, contact information, professional identity, and an interactive digital visiting card.
+This project is a professional single-page website for S VetriSelvan, B.Com, LLB, Advocate and Senior Consultant, based in Vellore. The website presents legal consultation, representation, practice areas, contact information, and professional identity.
 
 The design is intentionally premium, restrained, and trustworthy. It uses a navy, gold, white, and light-gray visual system inspired by an established advocate or legal consultancy identity rather than a generic startup or template aesthetic.
 
@@ -37,11 +37,12 @@ The main application is routed through `src/App.tsx`. The root page is `src/page
 ### Main Sections
 
 - **Loading screen:** Displays the advocate identity and a short progress animation before the page appears.
-- **Navbar:** Fixed responsive navigation with Home, Services, Contact, and Card links. It includes a mobile menu with accessible open and close labels.
-- **Hero section:** Introduces Sathiyanesan M and the Legal Business Consultant identity. Primary calls to action scroll to the contact and services sections.
+- **Navbar:** Fixed responsive navigation with Home, About, Services, Why Choose Us, and Contact links. It includes a mobile menu with accessible open and close labels.
+- **Hero section:** Introduces S VetriSelvan, B.Com, LLB, Advocate and Senior Consultant. Primary calls to action lead to consultation and services.
 - **Services section:** Presents the available legal and business services in a responsive card grid.
-- **Contact section:** Displays phone, email, and office address information with direct telephone and email links.
-- **Visiting card:** Provides an interactive card that flips to reveal contact details.
+- **Contact section:** Displays the verified phone and office address with direct telephone, WhatsApp, and directions links.
+- **Practice section:** Presents the advocate identity and a concise professional introduction.
+- **Why Choose Us section:** Presents practical value propositions and a four-step consultation process.
 - **Footer:** Reinforces the legal identity, copyright year, and professional positioning.
 
 ## Services Presented
@@ -108,7 +109,7 @@ The website preserves a small set of purposeful interactions:
 - Fixed navigation that changes appearance after scrolling
 - Smooth scrolling from navigation and hero call-to-action buttons
 - Responsive mobile navigation menu
-- Interactive 3D visiting-card flip
+- Floating WhatsApp contact action
 - Hover states for buttons, links, service cards, and accents
 
 Animations are intentionally subtle and support orientation and hierarchy. They should not distract from legal information or contact actions.
@@ -129,7 +130,7 @@ Responsive behavior includes:
 - Single-column mobile service and contact layouts
 - Multi-column service and contact layouts at larger breakpoints
 - Flexible hero typography that wraps safely on narrow screens
-- Stable visiting-card aspect ratio
+- Stable practice-panel aspect ratio
 - Responsive button stacking
 - No intentional horizontal page overflow
 
@@ -150,7 +151,7 @@ The implementation maintains the following accessibility practices:
 
 The browser and social metadata use the actual advocate identity:
 
-- Page title: `Sathiyanesan M | Legal Business Consultant`
+- Page title: `S VetriSelvan | Advocate & Senior Consultant | Vellore`
 - Description focused on legal consultancy services in Vellore
 - Open Graph title and description
 - Twitter/X title and description
@@ -171,7 +172,8 @@ Important files include:
 - `src/components/HeroSection.tsx` - primary introduction and calls to action
 - `src/components/ServicesSection.tsx` - legal services grid
 - `src/components/ContactSection.tsx` - contact details
-- `src/components/VisitingCard.tsx` - interactive digital visiting card
+- `src/components/VisitingCard.tsx` - advocate practice identity panel
+- `src/components/WhyChooseSection.tsx` - value propositions, process, and WhatsApp action
 - `src/components/LoadingScreen.tsx` - initial loading experience
 - `src/components/Footer.tsx` - site footer
 - `tailwind.config.ts` - Tailwind theme mapping
@@ -182,9 +184,8 @@ Important files include:
 
 The current contact details shown by the website are:
 
-- Phone: `+91 99441 10082`
-- Email: `ms11victor@gmail.com`
-- Office: Vetriselvan Advocate Chamber, No:06, Tanjammal Thirumana Mandabam, First Floor, Phase 1, South Avenue Road, Sathuvachari, Vellore - 632009
+- Phone: `+91 96002 63273`
+- Office: `VETRISELVAN ADVOCATE CHAMBER`, No:06, Tanjammal Thirumana Mandabam, First Floor, Phase 1, South Avenue Road Sathuvachari, Vellore - 632009
 
 These details should be updated in the relevant components if the office information changes.
 
@@ -203,8 +204,7 @@ Also verify the following manually:
 - The page opens at `/`.
 - Desktop navigation scrolls to each section.
 - Mobile navigation opens and closes correctly.
-- Phone and email links work on supported devices.
-- The visiting card flips correctly.
+- Phone, WhatsApp, and directions links work on supported devices.
 - The favicon appears in the browser tab.
 - The layout has no horizontal scrolling on mobile.
 - The production build loads without console errors.

@@ -6,6 +6,7 @@ import ServicesSection from "@/components/ServicesSection";
 import ContactSection from "@/components/ContactSection";
 import VisitingCard from "@/components/VisitingCard";
 import Footer from "@/components/Footer";
+import WhyChooseSection, { FloatingContactRail } from "@/components/WhyChooseSection";
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
@@ -18,10 +19,12 @@ const Index = () => {
     <div className="relative min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      <ServicesSection />
-      <ContactSection />
       <VisitingCard />
+      <ServicesSection />
+      <WhyChooseSection />
+      <ContactSection />
       <Footer />
+      <FloatingContactRail />
     </div>
   );
 };

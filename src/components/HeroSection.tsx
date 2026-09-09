@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import { Scale } from "lucide-react";
+import { ArrowDownRight, ArrowRight, Scale } from "lucide-react";
 
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -16,49 +16,38 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden bg-navy text-white">
-      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "linear-gradient(120deg, transparent 0 55%, hsl(42 45% 41% / 0.5) 55% 55.2%, transparent 55.2%)" }} />
-      <div ref={containerRef} className="relative z-10 max-w-6xl w-full mx-auto px-6 pt-24 pb-16">
-        <div className="max-w-3xl">
-          <div data-animate className="flex items-center gap-4 mb-8">
-            <div className="w-14 h-14 border border-gold flex items-center justify-center">
-            <Scale className="w-10 h-10 text-gold" />
-            </div>
-            <div className="h-px w-20 bg-gold" />
+    <section id="home" className="hero relative min-h-[min(860px,100vh)] flex items-center overflow-hidden bg-navy text-white">
+      <div className="hero-grid absolute inset-0" aria-hidden="true" />
+      <div ref={containerRef} className="relative z-10 mx-auto grid w-full max-w-6xl items-center gap-16 px-6 pb-16 pt-32 lg:grid-cols-[minmax(0,1fr)_minmax(300px,.72fr)] lg:gap-10 lg:px-10 lg:pt-28">
+        <div className="min-w-0 max-w-2xl lg:pr-8">
+          <div data-animate className="mb-8 flex items-center gap-4 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-gold-light">
+            <span className="h-px w-12 bg-gold" />
+            Vetriselvan Advocate Chamber
           </div>
-
-        <div data-animate className="mb-4">
-          <p className="font-body text-gold text-sm font-semibold tracking-[0.25em] uppercase">
-            Legal Business Consultant
-          </p>
+          <p data-animate className="mb-4 font-body text-sm font-semibold uppercase tracking-[0.24em] text-white/65">B.Com, LLB <span className="mx-2 text-gold">|</span> Advocate</p>
+          <h1 data-animate className="max-w-full whitespace-nowrap font-display text-[clamp(1.7rem,4.5vw,4.6rem)] font-bold leading-[0.98] tracking-[-0.055em]">S <span className="text-gold">V</span>ETRYSELVAN</h1>
+          <div data-animate className="mt-7 h-px w-20 bg-gold" />
+          <p data-animate className="mt-7 max-w-lg font-display text-xl leading-relaxed text-white/85 sm:text-2xl">Strategic Legal Counsel. Trusted Representation. Practical Solutions.</p>
+          <p data-animate className="mt-5 max-w-md font-body text-sm leading-7 text-white/55">Senior Consultant for legal consultation, representation, and considered guidance in Vellore.</p>
+          <div data-animate className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a href="tel:+919600263273" className="button-primary inline-flex items-center justify-center gap-3">Book a Consultation <ArrowRight className="h-4 w-4" /></a>
+            <button onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })} className="button-ghost inline-flex items-center justify-center gap-3">Explore Services <ArrowDownRight className="h-4 w-4" /></button>
+          </div>
+          <a data-animate href="tel:+919600263273" className="mt-7 inline-flex text-sm text-white/60 transition-colors hover:text-gold">Call +91 96002 63273 <span className="ml-2 text-gold">↗</span></a>
         </div>
 
-        <h1 data-animate className="font-display text-3xl sm:text-6xl md:text-7xl font-bold leading-tight tracking-tight break-words mb-6">
-          SATHIYANESAN <span className="text-gold">M</span>
-        </h1>
-
-        <div data-animate className="w-24 h-px bg-gold mb-6" />
-
-        <p data-animate className="font-body text-white/75 text-lg leading-relaxed max-w-xl">
-          Providing expert legal counsel with integrity, precision, and a commitment to justice.
-        </p>
-
-        <div data-animate className="mt-10 flex flex-col sm:flex-row gap-4">
-          <button
-            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-            className="px-8 py-3 rounded-sm bg-gold text-white font-body text-sm tracking-widest uppercase hover:bg-gold-dark transition-colors"
-          >
-            Get in Touch
-          </button>
-          <button
-            onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
-            className="px-8 py-3 rounded-sm border border-white/40 text-white font-body text-sm tracking-widest uppercase hover:border-gold hover:text-gold transition-colors"
-          >
-            Our Services
-          </button>
-        </div>
+        <div data-animate className="hero-emblem relative mx-auto flex aspect-square w-[min(74vw,410px)] items-center justify-center lg:ml-0 lg:mr-0 lg:w-[min(38vw,460px)] lg:justify-self-end lg:translate-x-12" aria-label="Scales of justice emblem">
+          <div className="emblem-ring emblem-ring-one" />
+          <div className="emblem-ring emblem-ring-two" />
+          <div className="emblem-cross absolute h-px w-3/4 bg-gold/25" />
+          <div className="emblem-cross absolute h-3/4 w-px bg-gold/25" />
+          <div className="relative flex h-44 w-44 items-center justify-center rounded-full border border-gold/55 bg-navy/60 sm:h-56 sm:w-56">
+            <Scale className="h-28 w-28 stroke-[0.8] text-gold sm:h-36 sm:w-36" />
+          </div>
+          <span className="absolute bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap text-[0.6rem] uppercase tracking-[0.35em] text-white/45">Justice • Clarity • Counsel</span>
         </div>
       </div>
+      <div className="absolute bottom-7 left-6 hidden items-center gap-3 text-[0.6rem] uppercase tracking-[0.3em] text-white/35 sm:flex lg:left-10"><span className="h-8 w-px bg-gold/60" /> Scroll to explore</div>
     </section>
   );
 };

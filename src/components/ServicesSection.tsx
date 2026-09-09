@@ -47,24 +47,23 @@ const ServicesSection = () => {
   }, []);
 
   return (
-    <section id="services" className="relative z-10 py-24 px-6 bg-white" ref={sectionRef}>
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
-          <p className="font-accent text-gold text-sm tracking-[0.3em] uppercase mb-3">What We Offer</p>
-          <h2 className="font-display text-3xl md:text-4xl text-navy">Our Services</h2>
-          <div className="w-16 h-px bg-gold mx-auto mt-4" />
+    <section id="services" className="relative z-10 bg-[#f5f5f2] px-6 py-24" ref={sectionRef}>
+      <div className="mx-auto max-w-6xl">
+        <div className="mb-14 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+          <div><p className="eyebrow mb-3">Practice areas</p><h2 className="section-title text-navy">Legal support with<br /><em>clear direction.</em></h2></div>
+          <p className="max-w-sm font-body text-sm leading-7 text-slate-500">Focused counsel for individuals, families, and businesses seeking practical legal solutions.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
             <div
               key={service.title}
               data-service
-              className="group p-6 rounded-sm bg-white border border-light-gray shadow-sm hover:-translate-y-1 hover:border-gold transition-all duration-300 cursor-default"
+              className="service-card group cursor-default rounded-lg border border-gold/30 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-gold hover:shadow-[0_18px_40px_rgba(20,42,72,.1)]"
             >
-              <service.icon className="w-8 h-8 text-gold mb-4 group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="font-display text-lg text-navy mb-2">{service.title}</h3>
-              <p className="font-body text-sm text-muted-foreground leading-relaxed">{service.desc}</p>
+              <div className="mb-8 flex items-start justify-between"><service.icon className="h-7 w-7 text-gold transition-transform duration-300 group-hover:scale-110" /><span className="font-body text-xs text-slate-300">0{services.indexOf(service) + 1}</span></div>
+              <h3 className="mb-3 font-display text-lg text-navy">{service.title}</h3>
+              <p className="font-body text-sm leading-6 text-slate-500">{service.desc}</p>
             </div>
           ))}
         </div>

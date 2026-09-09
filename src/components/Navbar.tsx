@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Scale, Menu, X } from "lucide-react";
 
-const navItems = ["Home", "Services", "Contact", "Card"];
+const navItems = ["Home", "About", "Services", "Why Choose Us", "Contact"];
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -14,20 +14,21 @@ const Navbar = () => {
   }, []);
 
   const scrollTo = (id: string) => {
-    document.getElementById(id.toLowerCase())?.scrollIntoView({ behavior: "smooth" });
+    const target = id.toLowerCase().replaceAll(" ", "-");
+    document.getElementById(target)?.scrollIntoView({ behavior: "smooth" });
     setMobileOpen(false);
   };
 
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
-        scrolled ? "bg-white/95 backdrop-blur-md shadow-card" : "bg-navy"
+        scrolled ? "border-b border-white/10 bg-navy/95 backdrop-blur-xl shadow-[0_10px_35px_rgba(10,24,45,.18)]" : "border-b border-white/10 bg-navy/80 backdrop-blur-sm"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <button onClick={() => scrollTo("home")} className="flex items-center gap-2">
-          <Scale className="w-6 h-6 text-gold" />
-          <span className="font-display text-lg text-white tracking-wider">SM</span>
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3.5 lg:px-10">
+        <button onClick={() => scrollTo("home")} className="group flex items-center gap-3">
+          <Scale className="h-7 w-7 text-gold transition-transform duration-300 group-hover:scale-105" />
+          <span className="flex flex-col text-left font-body text-[0.68rem] font-semibold leading-tight tracking-[0.2em] text-white"><span>VETRISELVAN</span><span className="text-gold">ADVOCATE</span></span>
         </button>
 
         {/* Desktop */}
@@ -41,6 +42,7 @@ const Navbar = () => {
               {item}
             </button>
           ))}
+          <a href="tel:+919600263273" className="button-primary ml-2 px-4 py-2 text-[0.65rem]">Book Consultation</a>
         </div>
 
         {/* Mobile toggle */}

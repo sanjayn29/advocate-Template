@@ -1,12 +1,11 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Scale, Phone, Mail, MapPin } from "lucide-react";
+import { Scale } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const VisitingCard = () => {
-  const [flipped, setFlipped] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -22,64 +21,36 @@ const VisitingCard = () => {
   }, []);
 
   return (
-    <section id="card" className="relative z-10 py-24 px-6" ref={ref}>
+    <section id="about" className="relative z-10 bg-white px-6 py-24" ref={ref}>
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
-          <p className="font-accent text-gold text-sm tracking-[0.3em] uppercase mb-3">Digital Card</p>
-          <h2 className="font-display text-3xl md:text-4xl text-navy">Visiting Card</h2>
+          <p className="eyebrow mb-3">The practice</p>
+          <h2 className="section-title text-navy">Trusted legal guidance<br /><em>with a practical approach.</em></h2>
           <div className="w-16 h-px bg-gold mx-auto mt-4" />
-          <p className="mt-4 text-sm text-muted-foreground font-body">Select the card to view contact details</p>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-500 font-body">S VetriSelvan, B.Com, LLB, Advocate and Senior Consultant, offers focused legal consultation, representation, and strategic guidance with a client-focused approach.</p>
         </div>
 
-        <div
-          className="mx-auto cursor-pointer"
-          style={{ perspective: "1000px", maxWidth: "480px" }}
-          onClick={() => setFlipped(!flipped)}
-        >
+        <div className="mx-auto mt-12 max-w-4xl" style={{ perspective: "1000px" }}>
           <div
             className="relative w-full transition-transform duration-700"
             style={{
               transformStyle: "preserve-3d",
-              transform: flipped ? "rotateY(180deg)" : "rotateY(0deg)",
-              aspectRatio: "1.75",
+              transform: "rotateY(0deg)",
+              aspectRatio: "2.5",
             }}
           >
             {/* Front */}
             <div
-              className="absolute inset-0 rounded-sm border border-gold bg-navy p-8 flex flex-col items-center justify-center gap-3"
+              className="absolute inset-0 rounded-lg border border-gold/40 bg-navy p-8 flex flex-col items-center justify-center gap-3"
               style={{ backfaceVisibility: "hidden" }}
             >
               <Scale className="w-12 h-12 text-gold" />
-              <h3 className="font-display text-2xl text-white tracking-wider">SATHIYANESAN M</h3>
-              <p className="font-accent text-white/70 tracking-[0.2em] text-sm uppercase">
-                Legal Business Consultant
-              </p>
+              <h3 className="font-display text-2xl text-white tracking-wider">S VETRYSELVAN</h3>
+              <p className="font-body text-white/70 tracking-[0.2em] text-sm uppercase">B.COM, LLB <span className="text-gold">|</span> ADVOCATE</p>
+              <p className="font-body text-xs uppercase tracking-[.25em] text-gold">Senior Consultant</p>
               <div className="w-16 h-px bg-gold mt-2" />
             </div>
 
-            {/* Back */}
-            <div
-              className="absolute inset-0 rounded-sm border border-gold bg-navy p-6 flex flex-col justify-center gap-4"
-              style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
-            >
-              <div className="flex items-start gap-3">
-                <Phone className="w-4 h-4 text-gold mt-0.5 shrink-0" />
-                <span className="font-body text-sm text-white/80">+91 99441 10082</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <Mail className="w-4 h-4 text-gold mt-0.5 shrink-0" />
-                <span className="font-body text-sm text-white/80">ms11victor@gmail.com</span>
-              </div>
-              <div className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-gold mt-0.5 shrink-0" />
-                <span className="font-body text-sm text-white/80 leading-relaxed">
-                  Vetriselvan Advocate Chamber, No:06, Tanjammal Thirumana Mandabam,
-                  First Floor, Phase 1, South Avenue Road, Sathuvachari, Vellore - 632009
-                </span>
-              </div>
-              <div className="w-16 h-px bg-gold mx-auto mt-2" />
-              <p className="text-center font-display text-xs text-gold tracking-widest">SATHIYANESAN M</p>
-            </div>
           </div>
         </div>
       </div>
