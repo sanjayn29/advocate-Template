@@ -43,7 +43,7 @@ const Navbar = () => {
               {item}
             </button>
           ))}
-          <a href="tel:+919600263273" className="button-primary ml-2 px-4 py-2 text-[0.65rem]">Book Consultation</a>
+          <a href="tel:+919876543210" className="button-primary ml-2 px-4 py-2 text-[0.65rem]">Book Consultation</a>
         </div>
 
         {/* Mobile toggle */}

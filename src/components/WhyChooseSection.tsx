@@ -1,4 +1,4 @@
-import { ArrowRight, Check, MessageCircle, Phone } from "lucide-react";
+import { ArrowRight, Check, Mail, MessageCircle, Phone } from "lucide-react";
 
 const values = [
   "Strategic Legal Guidance",
@@ -43,6 +43,9 @@ export const FloatingContactRail = () => (
   <div className="fixed bottom-5 right-5 z-30 flex flex-row gap-1 rounded-full border border-gold/45 bg-navy/95 p-1.5 shadow-[0_12px_30px_rgba(3,16,35,.3)] backdrop-blur-md md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:flex-col">
     <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp" title="Chat on WhatsApp" className="flex h-11 w-11 items-center justify-center rounded-full text-white/70 transition-colors hover:bg-white/10 hover:text-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-inset">
       <MessageCircle className="h-5 w-5" />
+    </a>
+    <a href="mailto:neelu.lawyer@gmail.com" aria-label="Email LLF Advocate" title="Email neelu.lawyer@gmail.com" className="flex h-11 w-11 items-center justify-center rounded-full text-white/70 transition-colors hover:bg-white/10 hover:text-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-inset">
+      <Mail className="h-5 w-5" />
     </a>
     <a href="tel:+919876543210" aria-label="Call LLF Advocate" title="Call +91 98765 43210" className="flex h-11 w-11 items-center justify-center rounded-full text-white/70 transition-colors hover:bg-white/10 hover:text-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-inset">
       <Phone className="h-5 w-5" />

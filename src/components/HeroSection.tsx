@@ -25,11 +25,11 @@ const HeroSection = () => {
             <span className="h-px w-12 bg-gold" />
             LLF - Lee Law Firm
           </div>
-          <p data-animate className="mb-4 font-body text-sm font-semibold uppercase tracking-[0.24em] text-white/65">BSc, MA, LLB, ML <span className="mx-2 text-gold">|</span> Advocate</p>
-          <h1 data-animate className="max-w-full whitespace-nowrap font-display text-[clamp(1.7rem,4.5vw,4.6rem)] font-bold leading-[0.98] tracking-[-0.055em]">P <span className="text-gold">N</span>EELAMEGAN</h1>
+          <p data-animate className="mb-4 font-body text-sm font-semibold uppercase tracking-[0.24em] text-white/65">BSc, MA, LLB, ML <span className="mx-2 text-gold">|</span> Advocate | Legal Consultant</p>
+          <h1 data-animate className="max-w-full whitespace-nowrap font-display text-[clamp(1.7rem,4.5vw,4.6rem)] font-bold leading-[0.98] tracking-[-0.055em]">P. <span className="text-gold">N</span>EELAMEGAM</h1>
           <div data-animate className="mt-7 h-px w-20 bg-gold" />
           <p data-animate className="mt-7 max-w-lg font-display text-xl leading-relaxed text-white/85 sm:text-2xl">Advocates &amp; Legal Consultants</p>
-          <p data-animate className="mt-5 max-w-md font-body text-sm leading-7 text-white/55">P. Neelamegan, Advocate and Legal Consultant at LLF - Lee Law Firm.</p>
+          <p data-animate className="mt-5 max-w-md font-body text-sm leading-7 text-white/55">P. Neelamegam, Advocate and Legal Consultant at Lee Law Firm.</p>
           <div data-animate className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a href="tel:+919876543210" className="button-primary inline-flex items-center justify-center gap-3">Book a Consultation <ArrowRight className="h-4 w-4" /></a>
             <button onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })} className="button-ghost inline-flex items-center justify-center gap-3">Explore Services <ArrowDownRight className="h-4 w-4" /></button>

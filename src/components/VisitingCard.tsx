@@ -27,7 +27,7 @@ const VisitingCard = () => {
           <p className="eyebrow mb-3">The practice</p>
           <h2 className="section-title text-navy">Trusted legal guidance<br /><em>with a practical approach.</em></h2>
           <div className="w-16 h-px bg-gold mx-auto mt-4" />
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-500 font-body">P. Neelamegan, BSc, MA, LLB, ML, Advocate and Legal Consultant at LLF - Lee Law Firm, offers focused legal consultation and representation.</p>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-500 font-body">P. Neelamegam, BSc, MA, LLB, ML, Advocate and Legal Consultant at Lee Law Firm, offers focused legal consultation and representation.</p>
         </div>
 
         <div className="mx-auto mt-12 max-w-4xl" style={{ perspective: "1000px" }}>

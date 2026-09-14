@@ -6,7 +6,7 @@ const Footer = () => (
       <div className="flex flex-col gap-8 md:flex-row md:items-end md:justify-between">
       <div className="flex items-center gap-2">
         <img src={logo} alt="LLF - Lee Law Firm" className="h-10 w-auto rounded-full object-contain" />
-        <span className="flex flex-col font-body text-xs font-semibold leading-5 tracking-[.16em] text-white"><span>LLF - LEE LAW FIRM</span><span className="text-gold">P. NEELAMEGAN | ADVOCATE</span></span>
+        <span className="flex flex-col font-body text-xs font-semibold leading-5 tracking-[.16em] text-white"><span>LLF - LEE LAW FIRM</span><span className="text-gold">P. NEELAMEGAM | ADVOCATE | LEGAL CONSULTANT</span></span>
       </div>
       <div className="text-left md:text-right"><p className="mb-2 max-w-sm font-body text-xs leading-5 text-white/45">LLF - LEE LAW FIRM · Advocates &amp; Legal Consultants</p><p className="font-body text-xs text-white/55">© 2026 LLF - Lee Law Firm. All Rights Reserved.</p></div>
       </div>
