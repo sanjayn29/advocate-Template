@@ -2,25 +2,21 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
-  Shield,
-  Landmark,
-  MapPin,
   Scale,
-  CreditCard,
+  Shield,
+  Users,
+  Home,
   Briefcase,
-  Handshake,
 } from "lucide-react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const services = [
-  { icon: Shield, title: "Criminal Cases", desc: "Expert defense and prosecution representation in criminal matters." },
-  { icon: Landmark, title: "Civil Litigation", desc: "Comprehensive civil dispute resolution and court representation." },
-  { icon: MapPin, title: "Land Registrations", desc: "DTCP, CMDA & RERA approvals with end-to-end documentation." },
-  { icon: Scale, title: "Loan Arbitration & Mediation", desc: "Professional mediation for loan disputes and settlements." },
-  { icon: CreditCard, title: "CIBIL Clearance, NDC & OTS", desc: "Credit score repair, No Due Certificates & One Time Settlements." },
-  { icon: Briefcase, title: "Business Solutions", desc: "Legal advisory for business formation, compliance and strategy." },
-  { icon: Handshake, title: "Liaison Services", desc: "Government liaison and regulatory coordination services." },
+  { icon: Scale, title: "Civil Law", desc: "Clear legal guidance and representation for civil disputes and proceedings." },
+  { icon: Shield, title: "Criminal Law", desc: "Dedicated defense and representation in criminal matters." },
+  { icon: Users, title: "Family Law", desc: "Practical legal support for family matters and related proceedings." },
+  { icon: Home, title: "Property Law", desc: "Advice and representation for property transactions and disputes." },
+  { icon: Briefcase, title: "Corporate Law", desc: "Legal counsel for companies, businesses, compliance, and commercial matters." },
 ];
 
 const ServicesSection = () => {

@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { Scale } from "lucide-react";
+import visitingCard from "@/assets/VC.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,7 +27,7 @@ const VisitingCard = () => {
           <p className="eyebrow mb-3">The practice</p>
           <h2 className="section-title text-navy">Trusted legal guidance<br /><em>with a practical approach.</em></h2>
           <div className="w-16 h-px bg-gold mx-auto mt-4" />
-          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-500 font-body">S VetriSelvan, B.Com, LLB, Advocate and Senior Consultant, offers focused legal consultation, representation, and strategic guidance with a client-focused approach.</p>
+          <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-slate-500 font-body">P. Neelamegan, BSc, MA, LLB, ML, Advocate and Legal Consultant at LLF - Lee Law Firm, offers focused legal consultation and representation.</p>
         </div>
 
         <div className="mx-auto mt-12 max-w-4xl" style={{ perspective: "1000px" }}>
@@ -41,14 +41,10 @@ const VisitingCard = () => {
           >
             {/* Front */}
             <div
-              className="absolute inset-0 rounded-lg border border-gold/40 bg-navy p-8 flex flex-col items-center justify-center gap-3"
+              className="absolute inset-0 flex items-center justify-center"
               style={{ backfaceVisibility: "hidden" }}
             >
-              <Scale className="w-12 h-12 text-gold" />
-              <h3 className="font-display text-2xl text-white tracking-wider">S VETRYSELVAN</h3>
-              <p className="font-body text-white/70 tracking-[0.2em] text-sm uppercase">B.COM, LLB <span className="text-gold">|</span> ADVOCATE</p>
-              <p className="font-body text-xs uppercase tracking-[.25em] text-gold">Senior Consultant</p>
-              <div className="w-16 h-px bg-gold mt-2" />
+              <img src={visitingCard} alt="LLF - Lee Law Firm visiting card" className="w-full max-w-xl rounded-2xl object-contain" />
             </div>
 
           </div>

@@ -20,7 +20,7 @@ const WhyChooseSection = () => (
     <div className="mx-auto grid max-w-6xl gap-20 lg:grid-cols-[.8fr_1.2fr]">
       <div>
         <p className="eyebrow mb-3">The difference is in the approach</p>
-        <h2 className="section-title text-navy">Why choose<br /><em>VetriSelvan?</em></h2>
+        <h2 className="section-title text-navy">Why choose<br /><em>LLF - Lee Law Firm?</em></h2>
         <p className="mt-6 max-w-md font-body text-sm leading-7 text-slate-500">Legal matters call for clear thinking, measured advice, and a professional who stays close to the practical question at hand.</p>
       </div>
       <div className="grid gap-0 border-t border-slate-300">
@@ -41,10 +41,10 @@ const WhyChooseSection = () => (
 
 export const FloatingContactRail = () => (
   <div className="fixed bottom-5 right-5 z-30 flex flex-row gap-1 rounded-full border border-gold/45 bg-navy/95 p-1.5 shadow-[0_12px_30px_rgba(3,16,35,.3)] backdrop-blur-md md:bottom-auto md:top-1/2 md:-translate-y-1/2 md:flex-col">
-    <a href="https://wa.me/919600263273" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp" title="Chat on WhatsApp" className="flex h-11 w-11 items-center justify-center rounded-full text-white/70 transition-colors hover:bg-white/10 hover:text-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-inset">
+    <a href="https://wa.me/919876543210" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp" title="Chat on WhatsApp" className="flex h-11 w-11 items-center justify-center rounded-full text-white/70 transition-colors hover:bg-white/10 hover:text-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-inset">
       <MessageCircle className="h-5 w-5" />
     </a>
-    <a href="tel:+919600263273" aria-label="Call VetriSelvan Advocate" title="Call +91 96002 63273" className="flex h-11 w-11 items-center justify-center rounded-full text-white/70 transition-colors hover:bg-white/10 hover:text-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-inset">
+    <a href="tel:+919876543210" aria-label="Call LLF Advocate" title="Call +91 98765 43210" className="flex h-11 w-11 items-center justify-center rounded-full text-white/70 transition-colors hover:bg-white/10 hover:text-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-inset">
       <Phone className="h-5 w-5" />
     </a>
   </div>

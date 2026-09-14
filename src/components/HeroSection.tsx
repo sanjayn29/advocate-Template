@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ArrowDownRight, ArrowRight, Scale } from "lucide-react";
+import logo from "@/assets/llf-logo.jpeg";
 
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -22,27 +23,27 @@ const HeroSection = () => {
         <div className="min-w-0 max-w-2xl lg:pr-8">
           <div data-animate className="mb-8 flex items-center gap-4 text-[0.68rem] font-semibold uppercase tracking-[0.28em] text-gold-light">
             <span className="h-px w-12 bg-gold" />
-            Vetriselvan Advocate Chamber
+            LLF - Lee Law Firm
           </div>
-          <p data-animate className="mb-4 font-body text-sm font-semibold uppercase tracking-[0.24em] text-white/65">B.Com, LLB <span className="mx-2 text-gold">|</span> Advocate</p>
-          <h1 data-animate className="max-w-full whitespace-nowrap font-display text-[clamp(1.7rem,4.5vw,4.6rem)] font-bold leading-[0.98] tracking-[-0.055em]">S <span className="text-gold">V</span>ETRYSELVAN</h1>
+          <p data-animate className="mb-4 font-body text-sm font-semibold uppercase tracking-[0.24em] text-white/65">BSc, MA, LLB, ML <span className="mx-2 text-gold">|</span> Advocate</p>
+          <h1 data-animate className="max-w-full whitespace-nowrap font-display text-[clamp(1.7rem,4.5vw,4.6rem)] font-bold leading-[0.98] tracking-[-0.055em]">P <span className="text-gold">N</span>EELAMEGAN</h1>
           <div data-animate className="mt-7 h-px w-20 bg-gold" />
-          <p data-animate className="mt-7 max-w-lg font-display text-xl leading-relaxed text-white/85 sm:text-2xl">Strategic Legal Counsel. Trusted Representation. Practical Solutions.</p>
-          <p data-animate className="mt-5 max-w-md font-body text-sm leading-7 text-white/55">Senior Consultant for legal consultation, representation, and considered guidance in Vellore.</p>
+          <p data-animate className="mt-7 max-w-lg font-display text-xl leading-relaxed text-white/85 sm:text-2xl">Advocates &amp; Legal Consultants</p>
+          <p data-animate className="mt-5 max-w-md font-body text-sm leading-7 text-white/55">P. Neelamegan, Advocate and Legal Consultant at LLF - Lee Law Firm.</p>
           <div data-animate className="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href="tel:+919600263273" className="button-primary inline-flex items-center justify-center gap-3">Book a Consultation <ArrowRight className="h-4 w-4" /></a>
+            <a href="tel:+919876543210" className="button-primary inline-flex items-center justify-center gap-3">Book a Consultation <ArrowRight className="h-4 w-4" /></a>
             <button onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })} className="button-ghost inline-flex items-center justify-center gap-3">Explore Services <ArrowDownRight className="h-4 w-4" /></button>
           </div>
-          <a data-animate href="tel:+919600263273" className="mt-7 inline-flex text-sm text-white/60 transition-colors hover:text-gold">Call +91 96002 63273 <span className="ml-2 text-gold">↗</span></a>
+          <a data-animate href="tel:+919876543210" className="mt-7 inline-flex text-sm text-white/60 transition-colors hover:text-gold">Call +91 98765 43210 <span className="ml-2 text-gold">↗</span></a>
         </div>
 
-        <div data-animate className="hero-emblem relative mx-auto flex aspect-square w-[min(74vw,410px)] items-center justify-center lg:ml-0 lg:mr-0 lg:w-[min(38vw,460px)] lg:justify-self-end lg:translate-x-12" aria-label="Scales of justice emblem">
+        <div data-animate className="hero-emblem relative mx-auto flex aspect-square w-[min(74vw,410px)] items-center justify-center lg:ml-0 lg:mr-0 lg:w-[min(38vw,460px)] lg:justify-self-end lg:translate-x-12" aria-label="LLF - Lee Law Firm logo">
           <div className="emblem-ring emblem-ring-one" />
           <div className="emblem-ring emblem-ring-two" />
           <div className="emblem-cross absolute h-px w-3/4 bg-gold/25" />
           <div className="emblem-cross absolute h-3/4 w-px bg-gold/25" />
           <div className="relative flex h-44 w-44 items-center justify-center rounded-full border border-gold/55 bg-navy/60 sm:h-56 sm:w-56">
-            <Scale className="h-28 w-28 stroke-[0.8] text-gold sm:h-36 sm:w-36" />
+            <img src={logo} alt="LLF - Lee Law Firm" className="w-40 rounded-full object-contain sm:w-52" />
           </div>
           <span className="absolute bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap text-[0.6rem] uppercase tracking-[0.35em] text-white/45">Justice • Clarity • Counsel</span>
         </div>

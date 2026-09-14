@@ -1,8 +1,8 @@
-# S VetriSelvan Advocate Website
+# P Neelamegan | LLF - Lee Law Firm Website
 
 ## Project Overview
 
-This project is a professional single-page website for S VetriSelvan, B.Com, LLB, Advocate and Senior Consultant, based in Vellore. The website presents legal consultation, representation, practice areas, contact information, and professional identity.
+This project is a professional single-page website for P Neelamegan, B.Com, LLB, Advocate at LLF - Lee Law Firm, based in Vellore. The website presents legal consultation, representation, practice areas, contact information, and professional identity.
 
 The design is intentionally premium, restrained, and trustworthy. It uses a navy, gold, white, and light-gray visual system inspired by an established advocate or legal consultancy identity rather than a generic startup or template aesthetic.
 
@@ -38,7 +38,7 @@ The main application is routed through `src/App.tsx`. The root page is `src/page
 
 - **Loading screen:** Displays the advocate identity and a short progress animation before the page appears.
 - **Navbar:** Fixed responsive navigation with Home, About, Services, Why Choose Us, and Contact links. It includes a mobile menu with accessible open and close labels.
-- **Hero section:** Introduces S VetriSelvan, B.Com, LLB, Advocate and Senior Consultant. Primary calls to action lead to consultation and services.
+- **Hero section:** Introduces P Neelamegan, B.Com, LLB, Advocate at LLF - Lee Law Firm. Primary calls to action lead to consultation and services.
 - **Services section:** Presents the available legal and business services in a responsive card grid.
 - **Contact section:** Displays the verified phone and office address with direct telephone, WhatsApp, and directions links.
 - **Practice section:** Presents the advocate identity and a concise professional introduction.
@@ -151,11 +151,11 @@ The implementation maintains the following accessibility practices:
 
 The browser and social metadata use the actual advocate identity:
 
-- Page title: `S VetriSelvan | Advocate & Senior Consultant | Vellore`
+- Page title: `P Neelamegan | LLF - Lee Law Firm | Vellore`
 - Description focused on legal consultancy services in Vellore
 - Open Graph title and description
 - Twitter/X title and description
-- Custom advocate favicon at `public/advocate-mark.svg`
+- Custom LLF - Lee Law Firm logo at `src/assets/llf.jpeg`
 
 The favicon uses a navy field with a gold balance-scale mark to match the website identity.
 
@@ -185,7 +185,7 @@ Important files include:
 The current contact details shown by the website are:
 
 - Phone: `+91 96002 63273`
-- Office: `VETRISELVAN ADVOCATE CHAMBER`, No:06, Tanjammal Thirumana Mandabam, First Floor, Phase 1, South Avenue Road Sathuvachari, Vellore - 632009
+- Office: `LLF - LEE LAW FIRM`, No:06, Tanjammal Thirumana Mandabam, First Floor, Phase 1, South Avenue Road Sathuvachari, Vellore - 632009
 
 These details should be updated in the relevant components if the office information changes.
 

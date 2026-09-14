@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Scale } from "lucide-react";
+import logo from "@/assets/llf-logo.jpeg";
 
 interface LoadingScreenProps {
   onComplete: () => void;
@@ -37,15 +37,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
         }`}
       >
         <div className="animate-card-rotate" style={{ transformStyle: "preserve-3d" }}>
-          <div className="w-72 h-44 rounded-sm border border-gold bg-navy-light flex flex-col items-center justify-center gap-3 p-6">
-            <Scale className="w-10 h-10 text-gold animate-scale-pulse" />
-            <h2 className="font-display text-lg text-gold tracking-widest uppercase">
-              S VetriSelvan
-            </h2>
-            <p className="font-accent text-sm text-white/70 tracking-wider">
-              Advocate & Senior Consultant
-            </p>
-          </div>
+          <img src={logo} alt="LLF - Lee Law Firm" className="w-72 max-w-[80vw] rounded-full object-contain animate-scale-pulse" />
         </div>
 
         {/* Progress bar */}

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Scale, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/llf.jpeg";
 
 const navItems = ["Home", "About", "Services", "Why Choose Us", "Contact"];
 
@@ -27,8 +28,8 @@ const Navbar = () => {
     >
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3.5 lg:px-10">
         <button onClick={() => scrollTo("home")} className="group flex items-center gap-3">
-          <Scale className="h-7 w-7 text-gold transition-transform duration-300 group-hover:scale-105" />
-          <span className="flex flex-col text-left font-body text-[0.68rem] font-semibold leading-tight tracking-[0.2em] text-white"><span>VETRISELVAN</span><span className="text-gold">ADVOCATE</span></span>
+          <img src={logo} alt="LLF - Lee Law Firm" className="h-14 w-auto rounded-full object-contain transition-transform duration-300 group-hover:scale-105" />
+          <span className="font-display text-base font-bold tracking-[0.12em] text-gold sm:text-lg">LEE LAW FIRM</span>
         </button>
 
         {/* Desktop */}
